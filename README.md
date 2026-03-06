@@ -27,11 +27,11 @@ PyMesh Chat is a fully decentralised terminal application for secure group and p
 | Phase | Description | Status |
 |-------|-------------|--------|
 | **Phase 1** | Core networking — TCP, handshake, session model, peer discovery | ✅ Complete |
-| **Phase 2** | End-to-end encryption — Ed25519 keypairs, X25519, AES-256-GCM | 🔜 Next |
-| **Phase 3** | Full messaging — group broadcast, private 1-to-1, recipient prompts | ⏳ Planned |
-| **Phase 4** | File transfer — encrypted, chunked, broadcast + private | ⏳ Planned |
-| **Phase 5** | Rich terminal UI — Textual layout, peer sidebar, command completion | ⏳ Planned |
-| **Phase 6** | Packaging — PyInstaller binaries for macOS and Windows | ⏳ Planned |
+| **Phase 2** | End-to-end encryption — Ed25519 keypairs, X25519, AES-256-GCM | ✅ Complete |
+| **Phase 3** | Full messaging — group broadcast, private 1-to-1, recipient prompts | ✅ Complete |
+| **Phase 4** | File transfer — encrypted, chunked, broadcast + private | ✅  Complete |
+| **Phase 5** | Rich terminal UI — Textual layout, peer sidebar, command completion | ✅ Compelete |
+| **Phase 6** | Packaging — PyInstaller binaries for macOS and Windows | ✅ Compelete |
 
 ---
 
