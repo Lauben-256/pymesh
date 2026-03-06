@@ -3,7 +3,7 @@
 > Secure, serverless peer-to-peer terminal chat and file sharing — no central server, no middleman, no plaintext.
 
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
-![Phase](https://img.shields.io/badge/phase-1%20of%206-orange)
+![Phase](https://img.shields.io/badge/phase-6%20of%206-orange)
 ![Tests](https://img.shields.io/badge/tests-14%2F14%20passing-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
