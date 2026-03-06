@@ -48,10 +48,14 @@ from pymesh.utils.constants import (
 
 
 def setup_logging(verbose: bool) -> None:
-    level   = logging.DEBUG if verbose else logging.WARNING
+    level = logging.DEBUG if verbose else logging.WARNING
     # In TUI mode log to a file so we don't corrupt curses display
-    handler = (logging.FileHandler(os.path.join(os.path.expanduser("~"), ".pymesh", "pymesh.log"))
-               if not verbose else logging.StreamHandler(sys.stderr))
+    if not verbose:
+        log_dir = os.path.join(os.path.expanduser("~"), ".pymesh")
+        os.makedirs(log_dir, exist_ok=True)   # create ~/.pymesh if it doesn't exist yet
+        handler = logging.FileHandler(os.path.join(log_dir, "pymesh.log"))
+    else:
+        handler = logging.StreamHandler(sys.stderr)
     logging.basicConfig(level=level, format=LOG_FORMAT,
                         datefmt=LOG_DATE_FORMAT, handlers=[handler])
 
