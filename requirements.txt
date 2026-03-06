@@ -1,0 +1,11 @@
+# Required for LAN peer auto-discovery (mDNS)
+# Without this, peers must connect manually with --connect <ip>
+zeroconf>=0.131
+
+# Required for Phase 2: end-to-end encryption
+# (Ed25519 keypairs, X25519 key exchange, AES-256-GCM)
+cryptography>=42.0
+
+# Required for Phase 5: rich terminal UI
+textual>=0.60
+rich>=13.0
